@@ -1,0 +1,25 @@
+samples:
+  - control_1
+  - control_2
+  - control_3
+  - treatment_1
+  - treatment_2
+  - treatment_3
+
+reads:
+ dir: "../data/fastq"
+ R1: "_R1.fastq.gz"
+ R2: "_R2.fastq.gz"
+
+reference:
+ genome: "../data/reference/Homo_sapiens.GRCh38.dna.chromosome.22.fa"
+ gtf: "../data/reference/Homo_sapiens.GRCh38.110.gtf"
+
+
+threads:
+ fastqc: 2
+ trim_galore: 4
+ featurecounts: 4
+ Star_index: 4
+ STAR: 6
+ samtools: 2
